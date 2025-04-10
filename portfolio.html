@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- <title>Skills | Akanksha</title> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>Akanksha's Portfolio</title>
+
+  <style type="text/css">
+    body {
+      font-family:sans-serif;
+      background: linear-gradient(to right, #fce5d2, #fcebd9);
+}
+.navbar
+{
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background: linear-gradient(to right, #fce5d2, #fcebd9);
+
+}
+img
+{
+/*  margin-left: 50px;*/
+  margin-right: 20px;
+  padding-left: 2px;
+}
+.navbar-brand {
+ margin-left: 100px;
+ color: darkgray;
+ text-shadow: 1px 1px black;
+}
+
+.hero {
+  min-height: 90vh;
+  padding: 60px 0;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+}
+
+.hero-text h4 {
+  font-size: 1.75rem;
+}
+
+.social-icons img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+section {
+      padding: 100px 0;
+      min-height: 100vh;
+    }
+
+.skills-section {
+      padding: 60px 15px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .skill-card {
+      background-color: #fff;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .skill-icon {
+      font-size: 40px;
+      color: #ff7f50;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #444;
+    }
+</style>
+</head>
+<body>
+
+       <nav class="navbar navbar-expand-lg navbar-light px-5 py-3">
+        <img src="logo.jpg" width="60px" class="rounded-circle">
+    <a class="navbar-brand fw-bold text-warning " style="margin-left: 1px;" href="#">Akanksha</a>
+    <button class="navbar-toggler" type="button" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 100px;">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-dark">Contact Me</a>
+    </div>
+  </nav>
+ 
+      <section class="hero d-flex align-item-center" id="home">
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+          <div class="hero-img text-center mb-4 mb-md-0">
+              <img src="C:\Users\Akanksha Awale\Downloads\WhatsApp Image 2025-04-08 at 3.35.32 PM.jpeg" alt="Akanksha" class="rounded-circle border shadow py-3" width="300"/>
+          </div>
+          <div class="hero-text text-center text-md-start px-5 py-5">
+            <h2> Hey, I'm <span class="text-warning" style="text-shadow: 2px 1px black;">Akanksha</h2></span>
+              <h3><span class="text-warning">Full Stack Java developer</span></h3>
+              <p > I'm a passionate Full Stack Java Developer skilled in<br> Java, Spring Boot, HTML, CSS, JavaScript, and SQL.<br> I enjoy building responsive web apps and solving <br>real-world problems through clean code and continuous learning.
+              <div class="social-icons mb-3 gap-5">
+                <a href="https://www.linkedin.com/in/akanksha-awale-77052526b/"><img src="download3.png" width="24"></a>
+                <a href="https://www.naukri.com/mnjuser/profile?id=&altresid"><img src="1.png" width="24"></a>
+               <a href="https://github.com/akankshaawale"><img src="download1.png" width="20"></a>
+        </div> 
+              <a href="C:\Users\Akanksha Awale\Downloads\Akanksha Awale_CV (2).pdf" class="btn btn-dark">Download CV</a>
+        </div>
+      </section>
+
+<!-- about section -->
+      <section class="about-section text-center" id="about"> 
+  <h1 style="font-size: 2rem; font-weight: bold;"> About <span class="highlight">Me</span></h1>
+   <div class="underline"></div>
+  <p class="text-muted mb-4">A quick intro about who I am and what I do!</p>
+
+  <div class="about-text">
+    <p>Hi,!I'm <strong>Akanksha Awale</strong>, an <span class="highlight">aspiring Full Stack Java Developer</span> with a strong interest in crafting dynamic, responsive web applications. I have hands-on experience in <strong>Java, Spring Boot, HTML, CSS, Bootstrap, JavaScript,</strong> and <strong>SQL</strong>. I'm currently pursuing my <strong>B.Tech in Computer Science</strong> from DBATU University and maintaining an <strong>8.2 CGPA</strong>.</p>
+
+    <p>I’m passionate about continuous learning, solving real-world problems, and turning ideas into meaningful digital experiences. I love dancing, dream of visiting the Eiffel Tower someday, and aim to build a successful software development career by <strong>August 2025</strong>.</p>
+  </div>
+</section>
+
+
+<!-- skills section -->
+<section class="skills-section container" id="skills">
+    <h2 class="section-title" >My <span class="text-warning">Skills</span></h2>
+    <div class="row g-4">
+
+      <!-- Skill Card 1 -->
+      <div class="col-md-4">
+        <div class="card skill-card text-center p-4">
+          <i class="fab fa-html5 skill-icon"></i>
+          <h5 class="card-title">HTML5</h5>
+        </div>
+      </div>
+
+      <!-- Skill Card 2 -->
+      <div class="col-md-4">
+        <div class="card skill-card text-center p-4">
+          <i class="fab fa-css3-alt skill-icon"></i>
+          <h5 class="card-title">CSS3 & Bootstrap</h5>
+        </div>
+      </div>
+
+      <!-- Skill Card 3 -->
+      <div class="col-md-4">
+        <div class="card skill-card text-center p-4">
+          <i class="fab fa-js-square skill-icon"></i>
+          <h5 class="card-title">JavaScript</h5>
+        </div>
+      </div>
+
+      <!-- Skill Card 4 -->
+      <div class="col-md-4">
+        <div class="card skill-card text-center p-4">
+          <i class="fab fa-java skill-icon"></i>
+          <h5 class="card-title">Java & OOPs</h5>
+        </div>
+      </div>
+
+      <!-- Skill Card 5 -->
+      <div class="col-md-4">
+        <div class="card skill-card text-center p-4">
+          <i class="fas fa-database skill-icon"></i>
+          <h5 class="card-title">SQL</h5>
+        </div>
+      </div>
+
+      <!-- Skill Card 6 -->
+      <div class="col-md-4">
+        <div class="card skill-card text-center p-4">
+          <i class="fas fa-leaf skill-icon"></i>
+          <h5 class="card-title">Spring Boot</h5>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- contact info -->
+  <section id="contact">
+<div class="container">
+  <div class="contact-container row mx-auto">
+    <!-- Left: Contact Info -->
+    <div class="col-md-5 mb-4 contact-info">
+      <h3>Contact Info</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</p>
+      <p><i class="fas fa-envelope"></i> akankshaawale03@example.com</p>
+      <p><i class="fas fa-phone-alt"></i> +917887300580</p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/akanksha-awale-77052526b/" target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/akankshaawale" target="_blank">GitHub</a></p>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="col-md-7">
+      <h3>Send a Message</h3>
+      <form>
+        <div class="mb-3 ">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</section>
+</body>
+</html>
