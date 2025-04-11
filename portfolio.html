@@ -13,14 +13,21 @@
       font-family:sans-serif;
       background: linear-gradient(to right, #fce5d2, #fcebd9);
 }
-.navbar
-{
-  position: sticky;
-  z-index: 1000;
-  top: 0;
-  background: linear-gradient(to right, #fce5d2, #fcebd9);
-
+/* Remove sticky on mobile to fix bug */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #fcebd9; /* keep it visible when toggled */
+  }
 }
+
+/* Keep navbar sticky at top */
+.navbar {
+/*  position: sticky;*/
+/*  top: 0;*/
+/*  z-index: 1000;*/
+  background: linear-gradient(to right, #fce5d2, #fcebd9);
+}
+
 img
 {
 /*  margin-left: 50px;*/
@@ -98,9 +105,9 @@ section {
 </head>
 <body>
 
-       <nav class="navbar navbar-expand-lg navbar-light px-5 py-3">
+       <nav class="navbar navbar-expand-lg navbar-light px-5 py-3 sticky-top">
         <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> -->
-        <img src="logo.jpg" width="60px" class="rounded-circle">
+        <img src="images/logo.jpg" width="60px" class="rounded-circle">
     <a class="navbar-brand fw-bold text-warning " style="margin-left: 1px;" href="#">Akanksha</a>
     <!-- <button class="navbar-toggler" type="button" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -122,18 +129,18 @@ section {
       <section class="hero d-flex align-item-center" id="home">
             <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
           <div class="hero-img text-center mb-4 mb-md-0">
-              <img src="mypic.jpeg" alt="Akanksha" class="rounded-circle border shadow py-3" width="300"/>
+              <img src="images/mypic.jpeg" alt="Akanksha" class="rounded-circle border shadow py-3" width="300"/>
           </div>
           <div class="hero-text text-center text-md-start px-5 py-5">
             <h2> Hey, I'm <span class="text-warning" style="text-shadow: 2px 1px black;">Akanksha</h2></span>
               <h3><span class="text-warning">Full Stack Java developer</span></h3>
               <p > I'm a passionate Full Stack Java Developer skilled in<br> Java, Spring Boot, HTML, CSS, JavaScript, and SQL.<br> I enjoy building responsive web apps and solving <br>real-world problems through clean code and continuous learning.
               <div class="social-icons mb-3 gap-5">
-                <a href="https://www.linkedin.com/in/akanksha-awale-77052526b/"><img src="download3.png" width="24"></a>
-                <a href="https://www.naukri.com/mnjuser/profile?id=&altresid"><img src="1.png" width="24"></a>
-               <a href="https://github.com/akankshaawale"><img src="download1.png" width="20"></a>
+                <a href="https://www.linkedin.com/in/akanksha-awale-77052526b/"><img src="images/download3.png" width="24"></a>
+                <a href="https://www.naukri.com/mnjuser/profile?id=&altresid"><img src="images/1.png" width="24"></a>
+               <a href="https://github.com/akankshaawale"><img src="images/download1.png" width="20"></a>
         </div> 
-              <a href="Akanksha Awale_CV.pdf" class="btn btn-dark">Download CV</a>
+              <a href="images/Akanksha Awale_CV.pdf" class="btn btn-dark">Download CV</a>
         </div>
       </section>
 
